@@ -37,11 +37,14 @@ elif age >= 67:
 print "ΤΡΙΤΗ ΑΣΚΗΣΗ"
 payment = input("Πόσο ειναι το εισόδημα σου; ")
 if payment > 0 < 100000:
-    print "Ο φόρος ειναι 5%"
+    fee = payment * 0.05
+    print "O φόρος ειναι:", fee
 elif payment > 10000 < 30000:
-    print "O φόρος ειναι 10%"
+    fee = payment * 0.10
+    print "O φόρος ειναι:", fee
 elif payment > 30000:
-    print "Ο φόρος ειναι 20%"
+    fee = payment * 0.20
+    print "O φόρος ειναι:", fee
 #------------------------------------------------
 print "ΤΕΤΑΡΤΗ ΑΣΚΗΣΗ"
 name = raw_input("Δώσε ονοματεπώνυμο: ")
