@@ -52,12 +52,12 @@ address = raw_input("Δώσε διεύθυνση: ")
 phonenumber = input("Δώσε αριθμό τηλεφώνου: ")
 kwh = input("Πλήθος κιλοβατώρων: ")
 if kwh > 100:
-    month = kwh * 30
-    cost = 0.20 * month
+    
+    cost = 0.20 * kwh
     print "Ονοματεπώνυμο: ", name, "Τιμή: ", str(cost) + "€"
 else:
-    month = kwh * 30
-    cost = 0.15 * month
+    
+    cost = 0.15 * kwh
     print "Ονοματεπώνυμο: ", name, "Τιμή: ", str(cost) + "€"
 #------------------------------------------------
 print "ΠΕΜΠΤΗ ΑΣΚΗΣΗ"
