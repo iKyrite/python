@@ -1,0 +1,46 @@
+import random
+name = ["George", "John", "Sara", "Besar", "Mary"]
+pick = random.choice(name)
+
+if pick == name[0]:
+    namelist = list(pick)
+    namelist[2] = "-"; namelist[4] = "-"; namelist[1] = "-"
+    print namelist
+
+    guess = raw_input("Guess the word: ")
+    guess = guess.lower()
+elif pick == name[1]:
+    pick = pick.lower()
+    namelist = list(pick)
+    namelist[2] = "-"; namelist[1] = "-"
+    print namelist
+    guess = raw_input("Guess the word: ")
+    guess = guess.lower()
+elif pick == name[2]:
+    pick = pick.lower()
+    namelist = list(pick)
+    namelist[2] = "-"; namelist[1] = "-"
+    print namelist
+    guess = raw_input("Guess the word: ")
+    guess = guess.lower()
+elif pick == name[3]:
+    pick = pick.lower()
+    namelist = list(pick)
+    namelist[1] = "-"; namelist[2] = "-"; namelist[3] = "-"
+    print namelist
+    guess = raw_input("Guess the word: ")
+    guess = guess.lower()
+elif pick == name[4]:
+    pick = pick.lower()
+    namelist = list(pick)
+    namelist[1] = "-"; namelist[2] = "-"
+    print namelist
+    guess = raw_input("Guess the word: ")
+    #guess.lower()
+else:
+    print "unknown"
+
+if guess == pick:
+    print "You've Won!"
+elif guess != pick:
+    print "You've lost!"
